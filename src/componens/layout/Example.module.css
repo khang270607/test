@@ -1,0 +1,45 @@
+/* CSS cho modal */
+.modal {
+    display: block;
+    /* hoặc none để ẩn modal ban đầu */
+    position: fixed;
+    /* cố định modal trên trang */
+    z-index: 1;
+    /* đảm bảo modal ở trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* full chiều rộng */
+    height: 100%;
+    /* full chiều cao */
+    overflow: auto;
+    /* cuộn nếu cần thiết */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* màu nền và độ mờ */
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* canh giữa trên và dưới, và canh trái và phải */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* phần trăm chiều rộng của modal */
+}
+
+/* nút đóng */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
